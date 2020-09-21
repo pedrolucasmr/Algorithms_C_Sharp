@@ -1,3 +1,4 @@
+0.5-Organizar diretório
 1-Corrigir geração de números aleatórios
 2-Reorganizar e melhorar módulo principal(program.cs)
 3-Implementar novo modo de geração de números
