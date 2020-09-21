@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "feZihLid3HQUHkuzdQus7Oru27w8QVTiokr3VaX1SVzEKOpEekcQ2MjD84QoFryofl5swOSpVZ4HUaLpX15EGg==",
+  "dgSpecHash": "ujOb5GNHazsDSn2MfyEX0brULjG066DO+DEBG/UIeTxMI6FY31wdk1qLADykFSr3igLQFUzlAa7ULj8Wi3aLjg==",
   "success": true,
-  "projectFilePath": "D:\\dev\\apis\\sorter\\sorter.csproj",
+  "projectFilePath": "D:\\dev\\Algoritmo\\Sorter\\sorter.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

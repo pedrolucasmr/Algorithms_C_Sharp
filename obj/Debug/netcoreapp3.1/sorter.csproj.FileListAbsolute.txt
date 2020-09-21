@@ -11,3 +11,16 @@ D:\dev\apis\sorter\obj\Debug\netcoreapp3.1\sorter.csproj.CoreCompileInputs.cache
 D:\dev\apis\sorter\obj\Debug\netcoreapp3.1\sorter.dll
 D:\dev\apis\sorter\obj\Debug\netcoreapp3.1\sorter.pdb
 D:\dev\apis\sorter\obj\Debug\netcoreapp3.1\sorter.genruntimeconfig.cache
+D:\dev\Algoritmo\Sorter\obj\Debug\netcoreapp3.1\sorter.csprojAssemblyReference.cache
+D:\dev\Algoritmo\Sorter\obj\Debug\netcoreapp3.1\sorter.AssemblyInfoInputs.cache
+D:\dev\Algoritmo\Sorter\obj\Debug\netcoreapp3.1\sorter.AssemblyInfo.cs
+D:\dev\Algoritmo\Sorter\obj\Debug\netcoreapp3.1\sorter.csproj.CoreCompileInputs.cache
+D:\dev\Algoritmo\Sorter\obj\Debug\netcoreapp3.1\sorter.dll
+D:\dev\Algoritmo\Sorter\obj\Debug\netcoreapp3.1\sorter.pdb
+D:\dev\Algoritmo\Sorter\bin\Debug\netcoreapp3.1\sorter.exe
+D:\dev\Algoritmo\Sorter\bin\Debug\netcoreapp3.1\sorter.deps.json
+D:\dev\Algoritmo\Sorter\bin\Debug\netcoreapp3.1\sorter.runtimeconfig.json
+D:\dev\Algoritmo\Sorter\bin\Debug\netcoreapp3.1\sorter.runtimeconfig.dev.json
+D:\dev\Algoritmo\Sorter\bin\Debug\netcoreapp3.1\sorter.dll
+D:\dev\Algoritmo\Sorter\bin\Debug\netcoreapp3.1\sorter.pdb
+D:\dev\Algoritmo\Sorter\obj\Debug\netcoreapp3.1\sorter.genruntimeconfig.cache

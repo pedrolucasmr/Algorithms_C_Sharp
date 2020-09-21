@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\dev\\apis\\sorter\\sorter.csproj",
+      "projectUniqueName": "D:\\dev\\Algoritmo\\Sorter\\sorter.csproj",
       "projectName": "sorter",
-      "projectPath": "D:\\dev\\apis\\sorter\\sorter.csproj",
+      "projectPath": "D:\\dev\\Algoritmo\\Sorter\\sorter.csproj",
       "packagesPath": "C:\\Users\\Pedro Lucas\\.nuget\\packages\\",
-      "outputPath": "D:\\dev\\apis\\sorter\\obj\\",
+      "outputPath": "D:\\dev\\Algoritmo\\Sorter\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
