@@ -1,0 +1,60 @@
+Teste com Bubble Sort: iniciado em 22:51:00.0030902 e terminado em 22:51:17.5509014.
+Total de 00:00:17.5478112 minutos de execução com 100000 valores. Notação de tempo média do algoritmo: O(n²); Notação de espaço média do algoritmo: O(1)
+--------------
+Teste com Selection Sort: iniciado em 22:51:17.5582365 e terminado em 22:51:35.3860645.
+Total de 00:00:17.8278280 minutos de execução com 100000 valores. Notação de tempo média do algoritmo: O(n²); Notação de espaço média do algoritmo: O(1)
+--------------
+Teste com Bubble Sort: iniciado em 22:51:35.3932846 e terminado em 22:51:52.8735049.
+Total de 00:00:17.4802203 minutos de execução com 100000 valores. Notação de tempo média do algoritmo: O(n²); Notação de espaço média do algoritmo: O(1)
+--------------
+Teste com Selection Sort: iniciado em 22:51:52.8751236 e terminado em 22:52:10.5485827.
+Total de 00:00:17.6734591 minutos de execução com 100000 valores. Notação de tempo média do algoritmo: O(n²); Notação de espaço média do algoritmo: O(1)
+--------------
+Teste com Bubble Sort: iniciado em 22:52:10.5546862 e terminado em 22:52:28.1539983.
+Total de 00:00:17.5993121 minutos de execução com 100000 valores. Notação de tempo média do algoritmo: O(n²); Notação de espaço média do algoritmo: O(1)
+--------------
+Teste com Selection Sort: iniciado em 22:52:28.1554953 e terminado em 22:52:46.0599011.
+Total de 00:00:17.9044058 minutos de execução com 100000 valores. Notação de tempo média do algoritmo: O(n²); Notação de espaço média do algoritmo: O(1)
+--------------
+Teste com Bubble Sort: iniciado em 22:52:46.0679360 e terminado em 22:53:03.6136887.
+Total de 00:00:17.5457527 minutos de execução com 100000 valores. Notação de tempo média do algoritmo: O(n²); Notação de espaço média do algoritmo: O(1)
+--------------
+Teste com Selection Sort: iniciado em 22:53:03.6151604 e terminado em 22:53:21.4231661.
+Total de 00:00:17.8080057 minutos de execução com 100000 valores. Notação de tempo média do algoritmo: O(n²); Notação de espaço média do algoritmo: O(1)
+--------------
+Teste com Bubble Sort: iniciado em 22:53:21.4297903 e terminado em 22:53:38.8392528.
+Total de 00:00:17.4094625 minutos de execução com 100000 valores. Notação de tempo média do algoritmo: O(n²); Notação de espaço média do algoritmo: O(1)
+--------------
+Teste com Selection Sort: iniciado em 22:53:38.8405936 e terminado em 22:53:56.6665099.
+Total de 00:00:17.8259163 minutos de execução com 100000 valores. Notação de tempo média do algoritmo: O(n²); Notação de espaço média do algoritmo: O(1)
+--------------
+Teste com Bubble Sort: iniciado em 22:53:56.6743334 e terminado em 22:54:14.1013183.
+Total de 00:00:17.4269849 minutos de execução com 100000 valores. Notação de tempo média do algoritmo: O(n²); Notação de espaço média do algoritmo: O(1)
+--------------
+Teste com Selection Sort: iniciado em 22:54:14.1033278 e terminado em 22:54:31.9005981.
+Total de 00:00:17.7972703 minutos de execução com 100000 valores. Notação de tempo média do algoritmo: O(n²); Notação de espaço média do algoritmo: O(1)
+--------------
+Teste com Bubble Sort: iniciado em 22:54:31.9085194 e terminado em 22:54:49.4533539.
+Total de 00:00:17.5448345 minutos de execução com 100000 valores. Notação de tempo média do algoritmo: O(n²); Notação de espaço média do algoritmo: O(1)
+--------------
+Teste com Selection Sort: iniciado em 22:54:49.4545119 e terminado em 22:55:07.2744956.
+Total de 00:00:17.8199837 minutos de execução com 100000 valores. Notação de tempo média do algoritmo: O(n²); Notação de espaço média do algoritmo: O(1)
+--------------
+Teste com Bubble Sort: iniciado em 22:55:07.2804507 e terminado em 22:55:24.6674061.
+Total de 00:00:17.3869554 minutos de execução com 100000 valores. Notação de tempo média do algoritmo: O(n²); Notação de espaço média do algoritmo: O(1)
+--------------
+Teste com Selection Sort: iniciado em 22:55:24.6689386 e terminado em 22:55:42.4871844.
+Total de 00:00:17.8182458 minutos de execução com 100000 valores. Notação de tempo média do algoritmo: O(n²); Notação de espaço média do algoritmo: O(1)
+--------------
+Teste com Bubble Sort: iniciado em 22:55:42.4929942 e terminado em 22:56:00.0475941.
+Total de 00:00:17.5545999 minutos de execução com 100000 valores. Notação de tempo média do algoritmo: O(n²); Notação de espaço média do algoritmo: O(1)
+--------------
+Teste com Selection Sort: iniciado em 22:56:00.0486081 e terminado em 22:56:17.8440885.
+Total de 00:00:17.7954804 minutos de execução com 100000 valores. Notação de tempo média do algoritmo: O(n²); Notação de espaço média do algoritmo: O(1)
+--------------
+Teste com Bubble Sort: iniciado em 22:56:17.8526777 e terminado em 22:56:35.3608622.
+Total de 00:00:17.5081845 minutos de execução com 100000 valores. Notação de tempo média do algoritmo: O(n²); Notação de espaço média do algoritmo: O(1)
+--------------
+Teste com Selection Sort: iniciado em 22:56:35.3617718 e terminado em 22:56:53.0538355.
+Total de 00:00:17.6920637 minutos de execução com 100000 valores. Notação de tempo média do algoritmo: O(n²); Notação de espaço média do algoritmo: O(1)
+--------------

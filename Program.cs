@@ -6,19 +6,15 @@ namespace sorter
     {
         static void Main(string[] args)
         {
-            //string[] array=NumberGenerator.NumbersToString(NumberGenerator.RandomNumberGenerator(0,1000,10));
-            //double[] numbers=NumberGenerator.RandomNumberGenerator(0,1000,10);
-            double[] numbers=new double[]{9,8,5,3,6,2};
-            double[] SelectionSortArray=SelectionSort.Sort(numbers);
-            System.Console.WriteLine("Números Desordenados:");
-            for(int j=0;j<numbers.Length;j++){
-                System.Console.WriteLine(numbers[j]);
-            }
-            System.Console.WriteLine("\n\n\nNúmeros Ordenados:");
-            for(int i=0;i<SelectionSortArray.Length;i++){
-                Console.WriteLine(SelectionSortArray[i]);
-            }
-            Console.Read();               
+            for(int i=0;i<10;i++){
+                double[] numbers=NumberGenerator.RandomNumberGenerator(0,1000000,100000);
+                double[] numbers1=NumberGenerator.RandomNumberGenerator(0,1000000,100000);
+                //double[] numbers=new double[]{9,8,5,3,6,2};
+                System.Console.WriteLine("\n/////////////////Executando Bubble Sort/////////////////");
+                BubbleSort.SortWithTest(numbers);
+                System.Console.WriteLine("\n/////////////////Executando Selection Sort/////////////////");
+                SelectionSort.SortWithTest(numbers1);
+            }           
         }
     }
 }
