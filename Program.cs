@@ -8,15 +8,15 @@ namespace sorter
         {
             SelectionSort selectionSort= new SelectionSort();
             BubbleSort bubbleSort=new BubbleSort();
-            for(int i=0;i<10;i++){
-                double[] numbers=NumberGenerator.RandomNumberGenerator(0,1000000,500000);
-                double[] numbers1=NumberGenerator.RandomNumberGenerator(0,1000000,500000);
-                //double[] numbers=new double[]{9,8,5,3,6,2};
-                //System.Console.WriteLine("\n/////////////////Executando Bubble Sort/////////////////");
-                //NumberGenerator.PrintArray(bubbleSort.Sort(numbers));
-                selectionSort.SortAndWrite(numbers1);
-                bubbleSort.SortAndWrite(numbers);
+            for(int i=0;i<2;i++){
+                selectionSort.SortAndWrite(NumberGeneratorService.GenerateNumbers(NumberGeneratorService.GenerateQuatity()));
+                bubbleSort.SortAndWrite(NumberGeneratorService.GenerateTestArray());
             }           
+        }
+        public static void PrintArray(double[] array){
+            for(int i=0;i<array.Length;i++){
+                System.Console.WriteLine(array[i]);
+            }
         }
     }
 }

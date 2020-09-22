@@ -49,7 +49,7 @@ namespace sorter
                         array[i]=aux;
             }
             this.SetRunEnd();
-            AlgorithmRunWriter.WriteRun(this.Name,this.TimeNotation,this.SpaceNotation,this.RunStart,this.RunEnd,this.TotalTime,array.Length);
+            WriterService.WriteRun(this.Name,this.TimeNotation,this.SpaceNotation,this.RunStart,this.RunEnd,this.TotalTime,array.Length);
             return array;
         }
         public bool SortTest(double[] array){

@@ -1,7 +1,7 @@
-0.5-Organizar diretório
-1-Corrigir geração de números aleatórios
-2-Reorganizar e melhorar módulo principal(program.cs)
-3-Implementar novo modo de geração de números
+0.5-Organizar diretório- Feito
+1-Corrigir geração de números aleatórios- Feito
+2-Reorganizar e melhorar módulo principal(program.cs)- Feito
+3-Implementar novo modo de geração de números- Feito
 4-Implementar QuickSort
 5-Implementar MergeSort
 6-Implementar HeapSort

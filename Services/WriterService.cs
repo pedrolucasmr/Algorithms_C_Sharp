@@ -5,7 +5,7 @@ using System.Text;
 
 namespace sorter
 {
-    public static class AlgorithmRunWriter
+    public static class WriterService
     {
         /*public TimeSpan Start {get;set;}
         private TimeSpan end;
@@ -22,7 +22,7 @@ namespace sorter
         }
         public TimeSpan TotalTime {get;set;}*/
         public static void WriteRun(string name, string timeNotation, string spaceNotation, TimeSpan start, TimeSpan end, TimeSpan totalTime, int entries){
-            using(StreamWriter sw= new StreamWriter("Results.txt",true)){                
+            using(StreamWriter sw= new StreamWriter("Results/Results.txt",true)){                
                 sw.WriteLine("----------------------------------------------------");
                 sw.WriteLine("Algoritmo: "+name);
                 sw.WriteLine("Horario de ínicio da execução: "+start);
