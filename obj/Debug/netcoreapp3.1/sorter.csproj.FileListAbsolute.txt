@@ -24,3 +24,5 @@ D:\dev\Algoritmo\Sorter\bin\Debug\netcoreapp3.1\sorter.runtimeconfig.dev.json
 D:\dev\Algoritmo\Sorter\bin\Debug\netcoreapp3.1\sorter.dll
 D:\dev\Algoritmo\Sorter\bin\Debug\netcoreapp3.1\sorter.pdb
 D:\dev\Algoritmo\Sorter\obj\Debug\netcoreapp3.1\sorter.genruntimeconfig.cache
+D:\dev\Algoritmo\Sorter\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+D:\dev\Algoritmo\Sorter\obj\Debug\netcoreapp3.1\sorter.csproj.CopyComplete

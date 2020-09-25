@@ -12,6 +12,7 @@ namespace sorter
         public TimeSpan RunEnd {get;set;}
         public abstract void SetRunEnd();
         public TimeSpan TotalTime{get;set;}
+        public int Entries {get;set;}
         
          public virtual double[] Sort(double[] array){return array;}
          public abstract bool SortTest(double[] array);

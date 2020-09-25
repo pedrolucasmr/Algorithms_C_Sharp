@@ -12,11 +12,13 @@ namespace sorter
         public TimeSpan RunStart {get;set;}
         public TimeSpan runEnd;
         public TimeSpan RunEnd{get=>runEnd;set=>SetRunEnd();}
+        
+        public TimeSpan TotalTime {get;set;}
+        public int Entries {get;set;}
         public void SetRunEnd(){
             runEnd=DateTime.Now.TimeOfDay;
             TotalTime=runEnd.Subtract(RunStart);
         }
-        public TimeSpan TotalTime {get;set;}
         private void _Sort(double[] array,int start,int end){            
             if(start<end){
                 int partition=Partition(array,start,end);
@@ -27,6 +29,7 @@ namespace sorter
         }
         public double[] Sort(double[] array,int start=0,int end=0){
             System.Console.WriteLine("\n/////////////////Executando Quick Sort/////////////////");
+            this.Entries=array.Length;
             end=end==0?array.Length-1:end;
             _Sort(array,start,end);
             return array;
@@ -52,10 +55,9 @@ namespace sorter
             this.RunStart=DateTime.Now.TimeOfDay;
             Sort(array,start,end);
             this.SetRunEnd();
-            WriterService.WriteRun(this,array.Length,path);
+            WriterService.WriteRun(this,path);
             return array;
         }
-
         public bool SortTest(double[] array){
             System.Console.WriteLine("Teste de funcionalidade. Algoritmo: "+this.Name);
             for(int i=0;i<array.Length-1;i++){

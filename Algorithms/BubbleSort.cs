@@ -11,13 +11,16 @@ namespace sorter
         public TimeSpan RunStart {get;set;}
         public TimeSpan runEnd;
         public TimeSpan RunEnd {get=>runEnd;set=>SetRunEnd();}
+        
+        public TimeSpan TotalTime {get;set;}
+        public int Entries {get;set;}
         public void SetRunEnd(){
             runEnd=DateTime.Now.TimeOfDay;
             TotalTime=RunEnd.Subtract(RunStart);
         }
-        public TimeSpan TotalTime {get;set;}
         public double[] Sort(double[] array){
             System.Console.WriteLine("\n/////////////////Executando Bubble Sort/////////////////");
+            this.Entries=array.Length;
             for(int i=0;i<array.Length-1;i++){
                 bool swapped=false;
                 for(int j=0;j<array.Length-i-1;j++){
@@ -38,7 +41,7 @@ namespace sorter
             this.RunStart=DateTime.Now.TimeOfDay;
             Sort(array);
             this.SetRunEnd();
-            WriterService.WriteRun(this,array.Length,path);
+            WriterService.WriteRun(this,path);
             return array;
         }
         public bool SortTest(double[] array){

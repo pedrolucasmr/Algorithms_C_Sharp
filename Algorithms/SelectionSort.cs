@@ -12,13 +12,16 @@ namespace sorter
         public TimeSpan RunStart {get;set;}
         public TimeSpan runEnd {get;set;}
         public TimeSpan RunEnd {get=>runEnd;set=>SetRunEnd();}
+        
+        public TimeSpan TotalTime {get;set;}
+        public int Entries {get;set;}
         public void SetRunEnd(){
             runEnd=DateTime.Now.TimeOfDay;
             TotalTime=RunEnd.Subtract(RunStart);
         }
-        public TimeSpan TotalTime {get;set;}
         public double[] Sort(double[] array){
             System.Console.WriteLine("\n/////////////////Executando Selection Sort/////////////////");
+            this.Entries=array.Length;
             int n=array.Length;
             for(int i=0;i<n-1;i++){
                 int minIndex=i;
@@ -37,7 +40,7 @@ namespace sorter
             this.RunStart=DateTime.Now.TimeOfDay;
             Sort(array);
             this.SetRunEnd();
-            WriterService.WriteRun(this,array.Length,path);
+            WriterService.WriteRun(this,path);
             return array;
         }
         public bool SortTest(double[] array){

@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "ujOb5GNHazsDSn2MfyEX0brULjG066DO+DEBG/UIeTxMI6FY31wdk1qLADykFSr3igLQFUzlAa7ULj8Wi3aLjg==",
+  "dgSpecHash": "SdEUq7iqtZ194V+4Lv4pmhwN1MY4JfaYffHA25O7iPuS+nWnRqr8rKdx1DIUyqLpWw/2c4OApwq2ApoJ/DO60A==",
   "success": true,
   "projectFilePath": "D:\\dev\\Algoritmo\\Sorter\\sorter.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Pedro Lucas\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
   "logs": []
 }

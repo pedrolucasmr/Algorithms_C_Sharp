@@ -12,6 +12,7 @@ namespace sorter
         private TimeSpan runEnd;
         public TimeSpan RunEnd{get=>runEnd;set=>SetRunEnd();}
         public TimeSpan TotalTime {get;set;}
+        public int Entries {get;set;}
         public void SetRunEnd(){
             this.runEnd=DateTime.Now.TimeOfDay;
             this.TotalTime=RunEnd.Subtract(RunStart);
@@ -62,6 +63,7 @@ namespace sorter
         }
         public double[] Sort(double[] array,int start=0,int end=0){
             System.Console.WriteLine("\n/////////////////Executando Merge Sort/////////////////");
+            this.Entries=array.Length;
             end=end==0?array.Length:end;
             _Sort(array,start,end-1);
             return array;
@@ -70,7 +72,7 @@ namespace sorter
             this.RunStart=DateTime.Now.TimeOfDay;
             Sort(array,start,end);
             this.SetRunEnd();
-            WriterService.WriteRun(this,array.Length,path);
+            WriterService.WriteRun(this,path);
             return array;
         }
         public bool SortTest(double[] array){
