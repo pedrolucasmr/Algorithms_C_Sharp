@@ -32,7 +32,7 @@ namespace sorter
             return array;
         }
         public int Partition(double[] array,int start, int end){
-            double pivot=array[end];
+            double pivot=array[(start+end)/2];
             int i=(start-1);
             for(int j=start;j<=end-1;j++){
                 if(array[j]<pivot){

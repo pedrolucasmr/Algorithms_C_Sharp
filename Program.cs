@@ -7,7 +7,7 @@ namespace sorter
     {
         static void Main(string[] args)
         {
-            System.Console.WriteLine("Selecione que rotina rodar:\n1-Rotina Aleatória\n2-Rotina de testes\n3-Rotina de testes grandes ");
+            System.Console.WriteLine("Selecione que rotina rodar:\n1-Rotina Aleatória\n2-Rotina de testes\n3-Rotina de testes grandes\n4-Executar testes consecutivos ");
             int option=int.Parse(Console.ReadLine());
             Console.Clear();
             switch(option){
@@ -23,6 +23,9 @@ namespace sorter
                     break;
                 case 3:
                     RunHugeTests();
+                    break;
+                case 4:
+                    RunConsecutiveTests();
                     break;
                 default:
                     System.Console.WriteLine("Opção inválida");
@@ -88,7 +91,7 @@ namespace sorter
             System.Console.WriteLine("Oganizado: "+mergeSort.SortTest(numbers4));
         }
         public static void RunConsecutiveTests(){
-            System.Console.WriteLine("Iniciando rotina de testes consecutivas. Isso deve levar um tempo.");
+            System.Console.WriteLine("Iniciando rotina de testes consecutivos. Isso deve levar um tempo.");
             SelectionSort selectionSort=new SelectionSort();
             BubbleSort bubbleSort=new BubbleSort();
             QuickSort quickSort=new QuickSort();
@@ -97,10 +100,13 @@ namespace sorter
             int quantity=10;
             for(int i=0;i<6;i++){
             double[] numbers=NumberGeneratorService.GenerateNumbers(quantity);
+            double[] numbers1=NumberGeneratorService.GenerateNumbers(quantity);
+            double[] numbers2=NumberGeneratorService.GenerateNumbers(quantity);
+            double[] numbers3=NumberGeneratorService.GenerateNumbers(quantity);
             selectionSort.SortAndWrite(numbers,path);
-            bubbleSort.SortAndWrite(numbers,path);
-            quickSort.SortAndWrite(numbers,0,0,path);
-            mergeSort.SortAndWrite(numbers,0,0,path);
+            bubbleSort.SortAndWrite(numbers1,path);
+            quickSort.SortAndWrite(numbers2,0,0,path);
+            mergeSort.SortAndWrite(numbers3,0,0,path);
             quantity=quantity*10;
             }
         }
