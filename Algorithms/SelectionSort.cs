@@ -33,23 +33,11 @@ namespace sorter
             }
             return array;
         }
-        public double[] SortAndWrite(double[] array){
-            System.Console.WriteLine("\n/////////////////Executando Selection Sort/////////////////");
+        public double[] SortAndWrite(double[] array,string path="Results/Results.txt"){
             this.RunStart=DateTime.Now.TimeOfDay;
-            int n=array.Length;
-            for(int i=0;i<n-1;i++){
-                int minIndex=i;
-                for(int j=i+1;j<n;j++){
-                    if(array[j]<array[minIndex]){
-                        minIndex=j;                        
-                    }                    
-                }
-                double aux=array[minIndex];
-                        array[minIndex]=array[i];
-                        array[i]=aux;
-            }
+            Sort(array);
             this.SetRunEnd();
-            WriterService.WriteRun(this.Name,this.TimeNotation,this.SpaceNotation,this.RunStart,this.RunEnd,this.TotalTime,array.Length);
+            WriterService.WriteRun(this,array.Length,path);
             return array;
         }
         public bool SortTest(double[] array){

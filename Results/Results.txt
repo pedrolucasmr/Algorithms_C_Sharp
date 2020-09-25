@@ -1,36 +1,36 @@
 ----------------------------------------------------
-Algoritmo: Selection Sort
-Horario de ínicio da execução: 16:38:16.5428685
-Horário de Término da execução: 16:56:19.9863969
-Tempo total de execução: 00:18:03.4435284
-Número de elementos ordenados: 756265
-Notação de Tempo média do Algoritmo: O(n^2)
-Notação de Espaço média do Algoritmo: O(1)
+Algoritmo: Merge Sort
+Horario de ínicio da execução: 11:22:21.3145143
+Horário de Término da execução: 11:22:21.5706150
+Tempo total de execução: 00:00:00.2561007
+Número de elementos ordenados: 606892
+Notação de Tempo média do Algoritmo: O(n*log n)
+Notação de Espaço média do Algoritmo: O(n)
 ----------------------------------------------------
 ----------------------------------------------------
-Algoritmo: Bubble Sort
-Horario de ínicio da execução: 16:56:19.9935833
-Horário de Término da execução: 16:56:19.9939959
-Tempo total de execução: 00:00:00.0004126
-Número de elementos ordenados: 11
-Notação de Tempo média do Algoritmo: O(N^2)
-Notação de Espaço média do Algoritmo: O(1)
+Algoritmo: Merge Sort
+Horario de ínicio da execução: 11:23:00.3857102
+Horário de Término da execução: 11:23:00.6446607
+Tempo total de execução: 00:00:00.2589505
+Número de elementos ordenados: 618947
+Notação de Tempo média do Algoritmo: O(n*log n)
+Notação de Espaço média do Algoritmo: O(n)
 ----------------------------------------------------
 ----------------------------------------------------
-Algoritmo: Selection Sort
-Horario de ínicio da execução: 16:56:20.0362817
-Horário de Término da execução: 17:12:04.5114317
-Tempo total de execução: 00:15:44.4751500
-Número de elementos ordenados: 702575
-Notação de Tempo média do Algoritmo: O(n^2)
-Notação de Espaço média do Algoritmo: O(1)
+Algoritmo: Quick Sort
+Horario de ínicio da execução: 11:25:56.2869963
+Horário de Término da execução: 11:25:56.5258496
+Tempo total de execução: 00:00:00.2388533
+Número de elementos ordenados: 891761
+Notação de Tempo média do Algoritmo: O(n*log n)
+Notação de Espaço média do Algoritmo: O(log n)
 ----------------------------------------------------
 ----------------------------------------------------
-Algoritmo: Bubble Sort
-Horario de ínicio da execução: 17:12:04.5178372
-Horário de Término da execução: 17:12:04.5178758
-Tempo total de execução: 00:00:00.0000386
-Número de elementos ordenados: 11
-Notação de Tempo média do Algoritmo: O(N^2)
-Notação de Espaço média do Algoritmo: O(1)
+Algoritmo: Merge Sort
+Horario de ínicio da execução: 11:25:56.5695218
+Horário de Término da execução: 11:25:56.9068085
+Tempo total de execução: 00:00:00.3372867
+Número de elementos ordenados: 779889
+Notação de Tempo média do Algoritmo: O(n*log n)
+Notação de Espaço média do Algoritmo: O(n)
 ----------------------------------------------------

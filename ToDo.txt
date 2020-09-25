@@ -2,10 +2,10 @@
 1-Corrigir geração de números aleatórios- Feito
 2-Reorganizar e melhorar módulo principal(program.cs)- Feito
 3-Implementar novo modo de geração de números- Feito
-4-Implementar QuickSort
-5-Implementar MergeSort
-6-Implementar HeapSort
-7-Implementar RadixSort
+4-Implementar QuickSort- Feito
+5-Implementar MergeSort- Feito
+6-Implementar RadixSort
+7-Implementar HeapSort
 8-Implementar serialização para JSON
 9-Implementar interpretação de dados com Python
 10-Implementar geração de gráficos com Python

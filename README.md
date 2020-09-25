@@ -1,8 +1,10 @@
 # Algorithms_C_Sharp
-So, i decided to try out some sorting algorithms and i did in C#. The idea is to explain how each one of the algorithms works and how complex in Time and Space they are. Also, later in the development, i decided to implement some Python to create charts and comparisions between the algorithms.
+So, i decided to try out some sorting algorithms in C#. The idea is to explain how each one of the algorithms works and how complex in Time and Space they are. Also, later in the development, i decided to implement some Python to create charts and comparisions between the algorithms.
 
-First of all, we have the NumberGenerator class that generates random doubles so we do not need to enter them manually into the algorithms. This static class also generate random number quantities, so the number of doubles generated are also random(although within limits). The last method gives a small array, with a fixed lenght of 11 doubles, used mainly for initial tests of the algorithms.
+First of all, we have the NumberGenerator class that generates random doubles so we do not need to enter them manually into the algorithms. This static class also generate random number quantities, so the number of doubles generated and given to the algorithms are also random(although within limits). The last method gives a small array, with a fixed lenght of 11 doubles, used mainly for initial tests of the algorithms.
 
-Now, let's talk about the algorithms. For the purpose of this mini-project, each algorithm has it's own class, all of them inheriting from a interface. 
+Now, let's talk about the algorithms. For the purpose of this mini-project, each algorithm has it's own class, all of them inheriting from a interface. The Interface has six properties: the name of the algorithm(for example, "bubble sort"), the space and time notations, the start of the current run and it's end, and from that values it calculates the TotalTime of the run. It has four methods: a setter, a sort method that receives and returns a array of doubles, a different version of the sort method that writes the information about the algorithm and the results in a text file and a unitary test of the sort method, that tests if the array is really sorted. 
 
-*SELECTION SORT*
+*Bubble Sort*
+Data Structure: array
+A basic one, it swaps the adjacent values if they are in the wrong order. The algorithm does it over and over again until all the values are in the right position. Normally, the algorithm runs through the entire array one last time to garentee that every value is in order, we use a variable to prevent this and save some time. Basically, the variable is set to true if a value was swaped and if it's not, the variable is set to false. When a loop ends, if the variable's value is false, the algorithm stops and returns the result array. This algorithm is pretty slow, having a notation of O(n^n), but has a good space notation of O(1). 

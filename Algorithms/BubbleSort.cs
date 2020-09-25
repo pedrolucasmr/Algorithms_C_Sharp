@@ -34,20 +34,11 @@ namespace sorter
             }
             return array;
         }
-        public double[] SortAndWrite(double[] array){
-            System.Console.WriteLine("\n/////////////////Executando Bubble Sort/////////////////");
+        public double[] SortAndWrite(double[] array,string path="Results/Results.txt"){
             this.RunStart=DateTime.Now.TimeOfDay;
-            for(int i=0;i<array.Length-1;i++){
-                    for(int j=0;j<array.Length-i-1;j++){
-                        if(array[j+1]<array[j]){
-                            double aux=array[j];
-                            array[j]=array[j+1];
-                            array[j+1]=aux;
-                        }
-                    }
-            }
+            Sort(array);
             this.SetRunEnd();
-            WriterService.WriteRun(this.Name,this.TimeNotation,this.SpaceNotation,this.RunStart,this.RunEnd,this.TotalTime,array.Length);
+            WriterService.WriteRun(this,array.Length,path);
             return array;
         }
         public bool SortTest(double[] array){

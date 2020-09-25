@@ -6,7 +6,8 @@ namespace sorter
 {
     public static class NumberGeneratorService
     {
-        public static double[] GenerateNumbers(int quantity){
+        public static double[] GenerateNumbers(int quantity=0){
+            quantity=quantity==0?GenerateQuatity():quantity;
             Random RNG=new Random();
             double[] numbersArray=new double[quantity];
             for(int j=0;j<quantity;j++){
