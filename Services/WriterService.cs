@@ -9,8 +9,7 @@ namespace sorter
 {
     public static class WriterService
     {
-        public static bool StoreRun(ISortingAlgorithm algorithm){
-            //string connectionString="Server=localhost;Database=algorithms;Uid=Pedro;Pwd=Pl135246;";            
+        public static bool StoreRun(ISortingAlgorithm algorithm){         
             string connectionString=File.ReadAllText("Data/conn.txt");
             MySqlConnection connection= new MySqlConnection(connectionString);
             MySqlCommand command= new MySqlCommand();
