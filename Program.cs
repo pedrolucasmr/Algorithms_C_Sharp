@@ -7,7 +7,7 @@ namespace sorter
     {
         static void Main(string[] args)
         {
-            System.Console.WriteLine("Selecione que rotina rodar:\n1-Rotina Aleatória\n2-Rotina de testes\n3-Rotina de testes grandes\n4-Executar testes consecutivos\n5-Executar testes de serialização ");
+            System.Console.WriteLine("Selecione que rotina rodar:\n1-Rotina Aleatória\n2-Rotina de testes\n3-Rotina de testes grandes\n4-Executar testes consecutivos\n5-Executar testes de Armazenação ");
             int option=int.Parse(Console.ReadLine());
             Console.Clear();
             switch(option){
@@ -27,9 +27,9 @@ namespace sorter
                 case 4:
                     RunConsecutiveTests();
                     break;
-                /*case 5:
-                    RunSerializingTests();
-                    break;*/
+                case 5:
+                    RunStoringTests();
+                    break;
                 default:
                     System.Console.WriteLine("Opção inválida");
                     break;
@@ -112,17 +112,17 @@ namespace sorter
             quantity=quantity*10;
             }
         }
-        /*public static void RunSerializingTests(){
-            System.Console.WriteLine("Iniciando rotina de testes de serialização");
+        public static void RunStoringTests(){
+            System.Console.WriteLine("Iniciando rotina de testes de armazenamento");
             SelectionSort selectionSort=new SelectionSort();
             BubbleSort bubbleSort=new BubbleSort();
             QuickSort quickSort=new QuickSort();
             MergeSort mergeSort=new MergeSort();
-            bubbleSort.SortAndSerialize(NumberGeneratorService.GenerateTestArray());
-            selectionSort.SortAndSerialize(NumberGeneratorService.GenerateTestArray());
-            quickSort.SortAndSerializaze(NumberGeneratorService.GenerateTestArray());
-            mergeSort.SortAndSerialize(NumberGeneratorService.GenerateTestArray());
-        }*/
+            bubbleSort.SortAndStore(NumberGeneratorService.GenerateTestArray());
+            selectionSort.SortAndStore(NumberGeneratorService.GenerateTestArray());
+            quickSort.SortAndStore(NumberGeneratorService.GenerateTestArray());
+            mergeSort.SortAndStore(NumberGeneratorService.GenerateTestArray());
+        }
         public static void PrintArray(double[] array){
             for(int i=0;i<array.Length;i++){
                 System.Console.WriteLine(array[i]);

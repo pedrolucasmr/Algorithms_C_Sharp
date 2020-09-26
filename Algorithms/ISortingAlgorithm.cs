@@ -17,5 +17,6 @@ namespace sorter
          public virtual double[] Sort(double[] array){return array;}
          public abstract bool SortTest(double[] array);
          public virtual double[] SortAndWrite(double[] array){return array;}
+         public virtual void SortAndStore(double[] array){}
     }
 }

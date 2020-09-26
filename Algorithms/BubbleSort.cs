@@ -44,6 +44,17 @@ namespace sorter
             WriterService.WriteRun(this,path);
             return array;
         }
+        public void SortAndStore(double[] array){
+            this.RunStart=DateTime.Now.TimeOfDay;
+            Sort(array);
+            this.SetRunEnd();
+           if(WriterService.StoreRun(this)){
+               System.Console.WriteLine("Informações armazenadas com sucesso");
+           }
+           else{
+               System.Console.WriteLine("Fala ao armazenar informações");
+           }
+        }
         public bool SortTest(double[] array){
             System.Console.WriteLine("Teste de funcionalidade. Algoritmo: Bubble Sort");
             for(int i=0;i<array.Length-1;i++){

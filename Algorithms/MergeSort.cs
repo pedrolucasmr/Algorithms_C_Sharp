@@ -75,6 +75,17 @@ namespace sorter
             WriterService.WriteRun(this,path);
             return array;
         }
+        public void SortAndStore(double[] array, int start=0,int end=0){
+            this.RunStart=DateTime.Now.TimeOfDay;
+            Sort(array,start,end);
+            this.SetRunEnd();
+            if(WriterService.StoreRun(this)){
+                System.Console.WriteLine("Informações armazenadas com sucesso");
+            }
+            else{
+                System.Console.WriteLine("Falha ao armazenar informações");
+            }
+        }
         public bool SortTest(double[] array){
             System.Console.WriteLine("Teste de funcionalidade. Algoritmo: "+this.Name);
             for(int i=0;i<array.Length-1;i++){
