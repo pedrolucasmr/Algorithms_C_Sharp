@@ -98,18 +98,19 @@ namespace sorter
             BubbleSort bubbleSort=new BubbleSort();
             QuickSort quickSort=new QuickSort();
             MergeSort mergeSort=new MergeSort();
-            string path="Results/ConsecutiveResults.txt";
-            int quantity=10;
-            for(int i=0;i<6;i++){
-            double[] numbers=NumberGeneratorService.GenerateNumbers(quantity);
-            double[] numbers1=NumberGeneratorService.GenerateNumbers(quantity);
-            double[] numbers2=NumberGeneratorService.GenerateNumbers(quantity);
-            double[] numbers3=NumberGeneratorService.GenerateNumbers(quantity);
-            selectionSort.SortAndWrite(numbers,path);
-            bubbleSort.SortAndWrite(numbers1,path);
-            quickSort.SortAndWrite(numbers2,0,0,path);
-            mergeSort.SortAndWrite(numbers3,0,0,path);
-            quantity=quantity*10;
+            for(int j=0;j<8;j++){
+                int quantity=10;
+                for(int i=0;i<6;i++){
+                double[] numbers=NumberGeneratorService.GenerateNumbers(quantity);
+                double[] numbers1=NumberGeneratorService.GenerateNumbers(quantity);
+                double[] numbers2=NumberGeneratorService.GenerateNumbers(quantity);
+                double[] numbers3=NumberGeneratorService.GenerateNumbers(quantity);
+                selectionSort.SortAndStore(numbers);
+                bubbleSort.SortAndStore(numbers1);
+                quickSort.SortAndStore(numbers2);
+                mergeSort.SortAndStore(numbers3);
+                quantity=quantity*10;
+                }
             }
         }
         public static void RunStoringTests(){
