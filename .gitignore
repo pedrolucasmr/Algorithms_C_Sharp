@@ -1,5 +1,4 @@
-obj
+obj/
 .vscode
 conn.txt
 config.ini
-__init__.py

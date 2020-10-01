@@ -11,21 +11,23 @@ END//
 
 CREATE PROCEDURE GetAllRuns()
 BEGIN
-SELECT * FROM runs;
+SELECT * FROM runs ORDER BY entries ASC;
 END//
 
 CREATE PROCEDURE GetSpecificRuns(IN iType VARCHAR(255))
 BEGIN
-SELECT * FROM runs WHERE aName=iType;
+SELECT * FROM runs WHERE aName=iType ORDER BY entries ASC;
 END//
 SELECT * FROM runs;
 
 CREATE PROCEDURE GetRunResults(IN iType VARCHAR(255))
 BEGIN
-SELECT aName,totalTime,entries FROM runs WHERE aName=iType;
+SELECT aName,totalTime,entries FROM runs WHERE aName=iType ORDER BY entries ASC;
 END//
 
 CREATE PROCEDURE GetAllRunsResults()
 BEGIN
-SELECT aName,totalTime,entries FROM runs;
+SELECT aName,totalTime,entries FROM runs ORDER BY entries ASC;
 END//
+DROP PROCEDURE GetALLRuns;
+SELECT * FROM runs;
