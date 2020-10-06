@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\dev\\Algoritmo\\Sorter\\sorter.csproj": {}
+    "D:\\dev\\algoritmo\\sorter\\sorter.csproj": {}
   },
   "projects": {
-    "D:\\dev\\Algoritmo\\Sorter\\sorter.csproj": {
+    "D:\\dev\\algoritmo\\sorter\\sorter.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\dev\\Algoritmo\\Sorter\\sorter.csproj",
+        "projectUniqueName": "D:\\dev\\algoritmo\\sorter\\sorter.csproj",
         "projectName": "sorter",
-        "projectPath": "D:\\dev\\Algoritmo\\Sorter\\sorter.csproj",
+        "projectPath": "D:\\dev\\algoritmo\\sorter\\sorter.csproj",
         "packagesPath": "C:\\Users\\Pedro Lucas\\.nuget\\packages\\",
-        "outputPath": "D:\\dev\\Algoritmo\\Sorter\\obj\\",
+        "outputPath": "D:\\dev\\algoritmo\\sorter\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"

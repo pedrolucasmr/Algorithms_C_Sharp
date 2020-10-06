@@ -1,11 +1,9 @@
-import plotly as _plotly
+import plotly.graph_objects as _plotly
 import mysql.connector as _connector
 from mysql.connector import Error
 import sys
 sys.path.append("../Data")
-import time
-for x in sys.path:
-    print(x)
+import datetime
 import dbConfig
 
 _dbConfig=dbConfig.readDbConfig()
@@ -43,10 +41,9 @@ def GetRunTimeResults(algorithm):
         connection=_connector.connect(**_dbConfig)
         connection._open_connection()
         cursor=connection.cursor(dictionary=True)
-        cursor.callproc("GetRunResults",[algorithm])
-        results=cursor.fetchall()
+        results=cursor.callproc("GetRunResults",[algorithm,0,0])
         if(cursor.with_rows):
-            return results
+                return results.fetchall()
     except Error as e:
         print(e)
     finally:
@@ -71,40 +68,58 @@ def GetAllRunsTimeResults():
 
 def ArithmeticAverage(list):
     sum=0
+    print(list[20])
     for i in list:
-        sum=sum+i[2]
-    return sum
+        if(list[i]<0):
+            currentValue=currentValue*-1
+        sum=sum+i[1]
+    results=(sum/len(list))/1000
+    print(sum)
+    print(len(list))
+    print(results)
+    return (results)
 
-def DivideInList(list):
-    list10=[]
-    list100=[]
-    list1000=[]
-    list10000=[]
-    list100000=[]
-    list1000000=[]
-    for i in list:
-        if(i[2]>=0 and i[2]<=99):
-            list10.append(i)
-        elif(i[2]>=100 and i[2]<=999):
-            list100.append(i)
-        elif(i[2]>=1000 and i[2]<=9999):
-            list1000.append(i)
-        elif(i[2]>=10000 and i[2]<=99999):
-            list10000.append(i)
-        elif(i[2]>=100000 and i[2]<=999999):
-            list100000.append(i)
-        elif(i>=1000000):
-            list1000000.append(i)
-    listOfLists=[list10,list100,list1000,list10000,list100000,list1000000]
-    return listOfLists
+def ZeroToAHundred(x):
+    if(x[2]>=0 and x[2]<=99):
+        return True
+    else:
+        return False
+def AHundredToAThousand(x):
+    if(x[2]>=100 and x[2]<=999):
+        return True
+    else:
+        return False
+def AThousandToTenThousand(x):
+    if(x[2]>=1000 and x[2]<=9999):
+        return True
+    else:
+        return False
+def TenThousandToAHundredThousand(x):
+    if(x[2]>=10000 and x[2]<=99999):
+        return True
+    else:
+        return False
+def AHundredThousandToAMillion(x):
+    if(x[2]>= 100000):
+        return True
+    else:
+        return False
 
 def SingleAlgorithmChart(algorithm):
     results=GetRunTimeResults(algorithm)
-    print(len(results))
-    
-    
+    for i in results:
+        print(i)
+    dozens=list(filter(ZeroToAHundred,results))
+    hundreds=list(filter(AHundredToAThousand,results))
+    thousands=list(filter(AThousandToTenThousand,results))
+    dozensOfThousands=list(filter(TenThousandToAHundredThousand,results))
+    hundredsofThousands=list(filter(AHundredThousandToAMillion,results))
+    yAxis=[ArithmeticAverage(dozens),ArithmeticAverage(hundreds),ArithmeticAverage(thousands),ArithmeticAverage(dozensOfThousands),ArithmeticAverage(hundredsofThousands)]
+    xAxis=["Dezenas","Centenas","Milhares","Dezenas de Milhares","Centenas de milhares"]
+    figure=_plotly.Figure([_plotly.Bar(x=xAxis,y=yAxis)])
+    figure.show()
 
-SingleAlgorithmChart("Quick Sort")
+SingleAlgorithmChart("Bubble Sort")
 #GetRuns()
 #GetSpecificRun("Bubble Sort")
 #GetRunTimeResults("Bubble Sort")

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "YGl8U/r9QqQKdG3CR+35205NGXhO7rjIc7kK0TJj1hlZXvwq9Mm3WKa9FonoBY1b56e9iU+ccuFTcW9pGwUXYg==",
+  "dgSpecHash": "anK+KAEMQn8ptUSr6iSSjyAa8xpIP3YdQst28AfXWIe+O/LonQl3ujf8nMpzPhcp9H6jse06vz/YLkiG3IGeAw==",
   "success": true,
-  "projectFilePath": "D:\\dev\\Algoritmo\\Sorter\\sorter.csproj",
+  "projectFilePath": "D:\\dev\\algoritmo\\sorter\\sorter.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Pedro Lucas\\.nuget\\packages\\bouncycastle.netcore\\1.8.3\\bouncycastle.netcore.1.8.3.nupkg.sha512",
     "C:\\Users\\Pedro Lucas\\.nuget\\packages\\google.protobuf\\3.6.1\\google.protobuf.3.6.1.nupkg.sha512",

@@ -23,7 +23,7 @@ namespace sorter
                 command.Parameters.Add(new MySqlParameter("iSpaceNotation",algorithm.SpaceNotation));
                 command.Parameters.Add(new MySqlParameter("iRunStart",algorithm.RunStart));
                 command.Parameters.Add(new MySqlParameter("iRunEnd",algorithm.RunEnd));
-                command.Parameters.Add(new MySqlParameter("iTotalTime",algorithm.TotalTime));
+                command.Parameters.Add(new MySqlParameter("iTotalTime",algorithm.TotalTime.TotalMilliseconds));
                 command.Parameters.Add(new MySqlParameter("iEntries",algorithm.Entries));
                 command.ExecuteNonQuery();
                 return true;
